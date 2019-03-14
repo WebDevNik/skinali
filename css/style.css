@@ -46,6 +46,21 @@ body {
   color: #262626;
 }
 
+.section {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 30px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section__title {
+  margin-bottom: 100px;
+}
+
 .button-o {
   font-family: 'Proxima Nova Semibold', sans-serif;
   color: #507fe1;
@@ -113,6 +128,9 @@ input[type="checkbox"]:checked + label:before {
 @media (max-width: 576px) {
   .button-o {
     font-size: 10px;
+  }
+  .section-title {
+    font-size: 24px;
   }
 }
 
@@ -302,7 +320,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .offer-block {
-  background: #ffffff url("../img/offer/form-bg.png") no-repeat center right;
+  background: #ffffff url("../img/form/form-bg.png") no-repeat center right;
   background-size: contain;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
@@ -399,6 +417,38 @@ input[type="checkbox"]:checked + label:before {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     width: 100%;
+  }
+}
+
+.features-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features-block__item {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 991px) {
+  .features-block__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-block__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
