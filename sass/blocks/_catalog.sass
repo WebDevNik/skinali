@@ -1,4 +1,5 @@
 .catalog
+  background-color: #f5f6f8
   &-block
     display: flex
     justify-content: space-between
@@ -30,6 +31,15 @@
       background-color: rgba($primary, 0.6)
     &__image
       display: block
+  &__link
+    margin-top: 60px
+    text-align: center
+    &-more 
+      display: inline-block
+  &__description
+    margin-top: 25px
+    display: block
+
 @media (max-width: 1199px)
   .catalog
     &-block
