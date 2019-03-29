@@ -9,7 +9,7 @@
   &-card
     background-color: #fff
     position: relative
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05)
     &__text
       padding: 20px
       font-size: 15px
@@ -34,9 +34,16 @@
         z-index: 99
         padding-top: 0
         bottom: -80px
-@media (max-width: 991px)
+@media (max-width: 1190px)
   .price
     &-block
+      margin: auto
+      max-width: 750px
       justify-content: center
       &__card
         margin: 20px
+@media (max-width: 400px)
+  .price
+    &-block
+      &__card
+        margin: 10px

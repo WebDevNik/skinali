@@ -1,0 +1,43 @@
+.step
+  position: relative
+  text-align: center
+  &__title
+    font-size: 18px
+  &__text
+    margin: auto
+    max-width: 160px
+    margin-bottom: 30px
+  &:last-child
+    &:before
+      display: none
+  &:before
+    content: ''
+    width: 100%
+    height: 2px
+    background-color: rgba(#7e7b78, 0.8)
+    display: block
+    position: absolute
+    top: 26%
+    right: -63%
+  &s
+    background-color: #f5f6f8
+    &-block
+      margin-top: 90px
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+@media (max-width: 991px)
+  .step
+    width: 33%
+    &:before
+      display: none
+    &__text
+      align-items: center
+@media (max-width: 768px)
+  .step
+    width: 100%
+    margin-bottom: 40px
+    &__title
+      margin-top: 10px
+    &__text
+      max-width: 200px

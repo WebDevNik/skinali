@@ -54,7 +54,7 @@
       background: none
       background-color: #fff
       padding: 40px
-  
+
   .form
     &__row
       flex-direction: column
@@ -67,3 +67,11 @@
     &__group
       flex-basis: 100%
       width: 100%
+@media (max-width: 480px)
+  .form
+    &__row
+      &-checkbox
+        flex-direction: column
+        align-items: flex-start
+    &__checkbox
+      margin-bottom: 20px
