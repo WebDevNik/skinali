@@ -1,0 +1,68 @@
+.shape
+  &-block
+    background: #ffffff url('../img/shape/shape-bg.png') no-repeat center right
+    background-size: contain
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
+    padding: 60px
+    margin-top: -298px
+
+  &__title
+    margin: 0
+    margin-bottom: 27px
+    +bold
+    font-size: 25px
+    text-transform: uppercase
+  &__subtitle
+    display: block
+    font-size: 21px
+.form
+  margin-top: 44px
+  &__last
+    border-right-width: 1px
+  &__button
+    padding: 30px 30px
+    height: 80px
+    font-size: 15px
+  &__verify
+    margin-left: 44px
+  &__text
+    font-size: 17px
+    color: #596164
+@media (max-width: 991px)
+  .shape
+    &-block
+      background-position: center right -110px
+    &__subtitle
+      max-width: 600px
+      font-size: 14px
+  .form
+    &__input
+      height: 65px
+    &__button
+      font-size: 10px
+      padding: 15px 15px 
+    &__text
+      font-size: 14px
+    &__verify
+      margin-left: 15px
+@media (max-width: 768px)
+  .shape
+    &-block
+      background: none
+      margin-left: 100px
+      margin-right: 100px
+  .form
+    &__text
+      text-align: center
+    &__button
+      font-size: 14px
+@media (max-width: 576px)
+  .shape
+    &-block
+      margin-left: 50px
+      margin-right: 50px
+@media (max-width: 480px)
+  .shape
+    &-block
+      margin-left: 20px
+      margin-right: 20px

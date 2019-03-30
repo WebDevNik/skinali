@@ -805,4 +805,170 @@ input[type="checkbox"]:checked + label:before {
     max-width: 200px;
   }
 }
+
+.reviews {
+  background-color: #f5f6f8;
+}
+
+.reviews-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 200px;
+}
+
+.reviews-slider__item {
+  text-align: center;
+}
+
+.reviews-slider__image {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #6a99e9;
+  border-radius: 60%;
+  margin: 20px auto;
+}
+
+.reviews-slider__text {
+  font-size: 15px;
+  position: relative;
+  font-style: italic;
+  max-width: 332px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.reviews-slider__text:after {
+  content: '';
+  position: absolute;
+  bottom: -42px;
+  left: 44%;
+  height: 10px;
+  border: 20px solid transparent;
+  border-top: 20px solid #ffffff;
+}
+
+.shape-block {
+  background: #ffffff url("../img/shape/shape-bg.png") no-repeat center right;
+  background-size: contain;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  padding: 60px;
+  margin-top: -298px;
+}
+
+.shape__title {
+  margin: 0;
+  margin-bottom: 27px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.shape__subtitle {
+  display: block;
+  font-size: 21px;
+}
+
+.form {
+  margin-top: 44px;
+}
+
+.form__last {
+  border-right-width: 1px;
+}
+
+.form__button {
+  padding: 30px 30px;
+  height: 80px;
+  font-size: 15px;
+}
+
+.form__verify {
+  margin-left: 44px;
+}
+
+.form__text {
+  font-size: 17px;
+  color: #596164;
+}
+
+@media (max-width: 991px) {
+  .shape-block {
+    background-position: center right -110px;
+  }
+  .shape__subtitle {
+    max-width: 600px;
+    font-size: 14px;
+  }
+  .form__input {
+    height: 65px;
+  }
+  .form__button {
+    font-size: 10px;
+    padding: 15px 15px;
+  }
+  .form__text {
+    font-size: 14px;
+  }
+  .form__verify {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shape-block {
+    background: none;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .form__text {
+    text-align: center;
+  }
+  .form__button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .shape-block {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shape-block {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.factory-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.factory-block__text {
+  font-size: 20px;
+  margin-left: 70px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.factory-block__image {
+  margin: 20px 0;
+}
 /*# sourceMappingURL=style.css.map */
