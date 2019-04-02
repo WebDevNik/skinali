@@ -1,0 +1,56 @@
+.footer
+  background-color: #262626
+  &-block
+    padding: 40px 0px
+    display: flex
+    justify-content: space-between
+    color: #fff
+    a
+      color: #fff
+      text-decoration: none
+  &__title
+    margin-top: 0
+    margin-bottom: 0
+    +bold
+    font-size: 18px
+    text-transform: uppercase
+  &__subtitle
+    margin-top: 8px
+    display: block
+    font-size: 14px
+  &__description
+    margin-top: 48px
+    display: block
+    font-size: 14px
+    color: #767676
+  &__image
+    margin-right: 28px
+    &:last-child
+      margin-right: 0
+  &__contacts
+    text-align: right
+  &__phone
+    margin-bottom: 19px
+    +bold
+    font-size: 20px
+    text-transform: uppercase
+  &__email
+    margin-bottom: 22px
+    font-size: 16px
+    text-decoration: underline
+  &__img
+    margin-right: 15px
+    &:last-child
+      margin-right: 0
+@media (max-width: 768px)
+  .footer
+    &-block
+      flex-direction: column
+      align-items: center
+      text-align: center
+    &__contacts
+      text-align: center
+    &__image
+      margin: 30px 0px 30px 0px
+    &__description
+      margin-top: 8px
