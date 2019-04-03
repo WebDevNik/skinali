@@ -8,20 +8,21 @@
   <title>Фабрика Скинали</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/twentytwenty.css">
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="main">
     <div class="menu">
       <div class="container">
         <nav class="menu__nav">
-          <a href="#" class="menu__link">Главная</a>
-          <a href="#" class="menu__link">Продукция</a>
-          <a href="#" class="menu__link">Каталог</a>
-          <a href="#" class="menu__link">Примеры работ</a>
-          <a href="#" class="menu__link">Примерка изображений </a>
-          <a href="#" class="menu__link">Стоимость дилерам</a>
-          <a href="#" class="menu__link">О скинали</a>
+          <a href="#main" class="menu__link">Главная</a>
+          <a href="#feature" class="menu__link">Преимущества</a>
+          <a href="#catalog" class="menu__link">Каталог</a>
+          <a href="#price" class="menu__link">Цены работ</a>
+          <a href="#before" class="menu__link">Примерка изображений </a>
+          <a href="#reviews" class="menu__link">Отзывы</a>
+          <a href="#contacts" class="menu__link">Контакты</a>
         </nav>
       </div>
     </div>
@@ -63,34 +64,40 @@
           Гарантия<br> минимальной цены<br> на скинали
         </h1>
         <span class="hero__subtitle">от 3 000 р/м2</span>
-        <button class="button hero__button">Заказать скинали</button>
+        <a href="#offer" class="button hero__button">Заказать скинали</a>
       </div>
     </div>
 
   </header>
 
   <main>
-    <section class="offer bg-secondary">
+    <section class="offer bg-secondary" id="offer">
       <div class="container">
         <div class="offer__block offer-block">
           <h2 class="offer__title">Оставьте заявку на расчет</h2>
           <span class="offer__subtitle">и получите скидку 30% на изготовление скинали или фартука для кухни</span>
           <form action="#" class="form offer__form">
             <div class="form__row">
-
               <div class="form__group">
                 <label for="" class="form__label">Вид стекла</label>
-                <input type="text" class="input form__input">
+                <input type="hidden" name="type" id="select-type" value="С печатью">
+                <div class="select form__select">
+                  <div class="select_checked">С печатью</div>
+                  <ul class="select__dropdown">
+                    <li class="select__option" data-value="С печатью">С печатью</li>
+                    <li class="select__option" data-value="Без печати">Без печати</li>
+                  </ul>
+                </div>
               </div>
 
               <div class="form__group">
                 <label for="" class="form__label">Ширина, см</label>
-                <input type="text" class="input form__input">
+                <input type="number" class="input form__input">
               </div>
 
               <div class="form__group">
                 <label for="" class="form__label">Высота, см</label>
-                <input type="text" class="input form__input form__last">
+                <input type="number" class="input form__input form__last">
               </div>
 
             </div>
@@ -129,7 +136,7 @@
         </div>
       </div>
     </section>
-    <section class="features section">
+    <section class="features section" id="feature">
       <div class="container">
         <h2 class="section-title section__title">Наши преимущества</h2>
         <div class="features-block">
@@ -169,7 +176,7 @@
       </div>
     </section>
 
-    <section class="section bg-secondary catalog">
+    <section class="section bg-secondary catalog" id="catalog">
       <div class="container">
         <div class="section-title section__title">Каталог скинали</div>
         <!-- /.section-title section__title -->
@@ -304,7 +311,7 @@
       <!-- /.container -->
     </section>
     <!-- /.section catalog -->
-    <section class="section useful">
+    <section class="section useful" id="useful">
       <div class="container">
         <div class="useful__heading">
           <h3 class="useful__title">Полезное или что важно знать о скинали...</h3>
@@ -348,7 +355,7 @@
       </div>
     </section>
 
-    <section class="section price">
+    <section class="section price" id="price">
       <div class="container">
         <div class="section-title section__title">Цены и виды скинали</div>
         <!-- /.section-title section__title -->
@@ -462,7 +469,7 @@
       <!-- /.container -->
     </section>
     <!-- /.price -->
-    <section class="section steps">
+    <section class="section steps" id="steps">
       <div class="container">
         <div class="section-title section__tite">Этапы работ</div>
         <div class="steps-block">
@@ -520,7 +527,49 @@
       <!-- /.container -->
     </section>
     <!-- /.section stages -->
-    <section class="section reviews">
+    <section class="section before" id="before">
+      <div class="container">
+        <h2 class="section-title section__title">До и после</h2>
+        <div class="before-slider-wrap">
+          <div class="before-slider">
+
+            <div class="before-slider-item">
+              <div class="before-after">
+                <img src="img/slider/sample-before.png" alt="">
+                <img src="img/slider/sample-after.png" alt="">
+              </div>
+            </div>
+
+            <div class="before-slider-item">
+              <div class="before-after">
+                <img src="img/slider/sample-before.png" alt="">
+                <img src="img/slider/sample-after.png" alt="">
+              </div>
+            </div>
+
+            <div class="before-slider-item">
+              <div class="before-after">
+                <img src="img/slider/sample-before.png" alt="">
+                <img src="img/slider/sample-after.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="before-slider-arrows">
+            <button class="arrow arrow-left">
+              <img src="img/slider/left.png" alt="">
+            </button>
+            <button class="arrow arrow-right">
+              <img src="img/slider/right.png" alt="">
+            </button>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section before -->
+    <section class="section reviews" id="reviews">
       <div class="container">
         <h2 class="section-title section__title">
           Отзывы наших клиентов
@@ -586,10 +635,10 @@
               </div>
               <!-- /.form__group -->
               <div class="form__group">
-                <input type="text" class="input form__input" placeholder="Ваш телефон">
+                <input type="tel" class="input form__input" placeholder="Ваш телефон">
               </div>
               <!-- /.form__group -->
-              <div class="form__group">
+              <div class="form__xgroup">
                 <input type="text" class="input form__input form__last" placeholder="Ваша цена">
               </div>
               <!-- /.form__group -->
@@ -647,7 +696,7 @@
       </div>
     </section>
     <!-- /.section factory -->
-    <section class="section contacts">
+    <section class="section contacts" id="contacts">
       <div class="container">
         <div class="h2 section-title section__title">
           Контакты
@@ -735,6 +784,12 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="js/jquery.event.move.js"></script>
+  <script src="js/jquery.twentytwenty.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
 </body>
 
 </html>

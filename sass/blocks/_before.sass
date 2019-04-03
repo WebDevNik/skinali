@@ -1,0 +1,47 @@
+.before
+  &-slider
+    &-wrap
+      z-index: 98
+      max-width: 640px
+      margin: auto
+      position: relative
+    &-arrows
+      z-index: -1
+      display: flex
+      justify-content: space-between
+      position: absolute
+      top: 50%
+      width: 100%
+      transform: translateY(-100%)
+      cursor: pointer
+    &__dots
+      margin: auto
+      margin-top: 15px
+      padding: 0
+      display: flex
+      justify-content: center
+      align-items: center
+      list-style: none
+      li
+        width: 10px
+        height: 10px
+        background-color: #d1d1d1
+        border-radius: 50%
+        margin: 5px
+        &:hover
+          cursor: pointer
+        &.slick-active
+          background-color: $primary
+
+      button
+        display: none
+.arrow
+  background-color: transparent
+  border: none
+  &:focus
+    outline: none
+
+  &-left
+    transform: translateX(-200%)
+  &-right
+    transform: translateX(200%)
