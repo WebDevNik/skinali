@@ -9,4 +9,3 @@ gulp.task('tinypng', function (done) {
     .pipe(gulp.dest('images'));
     done();
 });
-
